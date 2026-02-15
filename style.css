@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Green-title: hsl(158, 42%, 18%);
+  --Green-paragraph: hsl(158, 36%, 37%);
+  --black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+  --dark-grayish: hsl(228, 12%, 48%);
+}
+
+body {
+  font-family: "Montserrat", sans-serif, "Fraunces", serif;
+  background-color: #eeee;
+  height: 100vh;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: var(--White);
+  border-radius: 8px;
+  width: 550px;
+  height: 400px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.container .image {
+  height: 100%;
+  width: 47%;
+  background-image: url(images/image-product-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.container .info {
+  width: 50%;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.info .brand {
+  color: var(--dark-grayish);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.info .title {
+  font-size: 32px;
+  color: var(--black);
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+}
+.info .paragraph {
+  color: var(--dark-grayish);
+  line-height: 1.3;
+}
+.info .price span {
+  padding-right: 10px;
+}
+.price .new-price {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+  color: var(--Green-paragraph);
+}
+.price .old-price {
+  font-family: serif;
+  color: var(--dark-grayish);
+}
+.info .add-to-cart {
+  background-color: var(--Green-paragraph);
+  padding: 10px;
+  border-radius: 7px;
+  color: var(--White);
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 15px;
+  font-weight: bold;
+  border: 0px;
+}
+.info .add-to-cart:hover,
+.info .add-to-cart:active {
+  background-color: var(--Green-title);
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    height: auto; 
+    margin: 20px auto;
+  }
+  
+  .container .image {
+    width: 100%;
+    height: 250px; 
+    background-image: url(images/image-product-mobile.jpg);
+  }
+  
+  .container .info {
+    width: 100%;
+    padding: 20px;
+  }
+}
