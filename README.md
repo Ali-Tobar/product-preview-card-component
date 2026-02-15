@@ -24,8 +24,7 @@ It is a responsive card layout that displays a product image, title, description
 - CSS
 
 ## Live Demo
-
-[View the Project Here](https://yourusername.github.io/product-preview-card-component/)
+https://ali-tobar.github.io/product-preview-card-component/
 
 ## Author
 
